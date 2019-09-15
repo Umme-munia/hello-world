@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                  $("button").click(function(){
+                      alert("Successfull registered.");
+                    });
+                  });
+                
+                </script>
+    <style>
+        body{
+        outline:20px solid white;
+        }
+        form{
+            text-align: justify;
+        }
+        
+        input[type=text] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        
+        }
+        input[type=number] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        }
+    
+
+    </style>
+    </head>
+
+    <body>
+            <form action="/action_page.php" class="was-validated">
+                <div class="form-group">
+                  <label for="uname">Name:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                </div>
+                <div class="form-group">
+                  <label for="dept">Dept.:</label>
+                  <input type="text" class="form-control" id="dept" placeholder="Enter Dept" name="dept" required>
+                </div>
+                <div class="form-group">
+                  <label for="reg">Registration:</label>
+                  <input type="number" class="form-control" id="reg" placeholder="Enter Reg" name="quantity" min="1" max="10" required>
+                </div>
+                <p>Gender:</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio2">Female</label>
+              </div>
+                <br><br>
+                <button>Submit</button>
+              </form>
+            </div>
+
+            
+    </body>
+
+</html>
